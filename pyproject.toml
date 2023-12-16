@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "history-api"
+version = "0.1.0"
+description = ""
+authors = ["leviobrabo <carlosjunior20313@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
+blue = "^0.9.1"
+isort = "^5.13.2"
+taskipy = "^1.12.2"
+
+
+[tool.poetry.group.doc.dependencies]
+mkdocs-material = "^9.5.2"
+mkdocstrings = "^0.24.0"
+mkdocstrings-python = "^1.7.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = "--doctest-modules"
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[tool.taskipy.tasks]
+lint = "blue --check --diff . && isort --check --diff ."
+docs = "mkdocs serve"
+test = "pytest -s -x --cov=history_api -vv"
+post_test = "coverage html"

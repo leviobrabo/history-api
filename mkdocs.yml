@@ -1,0 +1,17 @@
+site_name: History API
+repo_url: https://github.com/leviobrabo/history-api
+repo_name: leviobrabo/history-api
+edit_uri: tree/main/docs
+
+theme:
+    name: material
+    favicon: assets/flavicon.png
+
+markdown_extensions:
+    - attr_list
+
+plugins:
+    - mkdocstrings:
+          handlers:
+              python:
+                  paths: [history_api]
