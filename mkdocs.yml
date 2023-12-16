@@ -127,6 +127,8 @@ nav:
     - Installation: getting-started.md
     - How to use: how-to-use.md
     - Language: language.md
+  - Examples:
+     - Events: Examples/examples.md
   - API: 
      - Events:
         - All historical events: API/Events/events.md
@@ -138,6 +140,8 @@ nav:
         - Presidents by ID ranges: API/Presidents/presidents_range_id.md
         - Presidents by location: API/Presidents/presidents_location.md
         - Presidents by name: API/Presidents/presidents_name.md
+     - Curiosity:
+        - All curiosity: API/Curiosity/curiosity.md
 
 
 copyright: |
