@@ -141,7 +141,10 @@ nav:
         - Presidents by location: API/Presidents/presidents_location.md
         - Presidents by name: API/Presidents/presidents_name.md
      - Curiosity:
-        - All curiosity: API/Curiosity/curiosity.md
+        - All historical curiosity: API/Curiosity/curiosity.md
+        - HIstorical curiosity by month: API/Curiosity/curiosity_month.md
+        - HIstorical curiosity by month and day: API/Curiosity/curiosity_month_day.md
+
 
 
 copyright: |
