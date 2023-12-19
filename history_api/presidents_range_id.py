@@ -50,13 +50,13 @@ def get_presidents_range(lang: str, start_id: str, end_id: str) -> dict[str, dic
         }
       }    
     """
-    presidents_path = get_presidents_path()
-    json_file = presidents_path / f"presidents-{lang}.json"
-
     lang = lang.lower()
 
     if lang not in LANGUAGES:
         raise KeyError(f"Unsupported language: {lang}")
+
+    presidents_path = get_presidents_path()
+    json_file = presidents_path / f"presidents-{lang}.json"
 
     if not (0 < int(start_id) <= 652) or not (0 < int(end_id) <= 652):
         raise KeyError("Provided president IDs are out of range")
