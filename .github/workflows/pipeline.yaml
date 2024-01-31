@@ -7,7 +7,7 @@ jobs:
 
     steps:
       - name: Copia os arquivos do repo
-        uses: actions/checkout@3.3.0
+        uses: actions/checkout@v4
       
       - name: Roda outro comando!
         run: echo $(ls)
