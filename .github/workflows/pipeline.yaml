@@ -9,6 +9,8 @@ jobs:
       - name: Copia os arquivos do repo
         uses: actions/checkout@v4
       
-      - name: Roda outro comando!
-        run: echo $(ls)
+      - name: Instalar o python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10' 
       
